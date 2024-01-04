@@ -1,0 +1,15 @@
+def sum_squared(num):
+    total = 0
+    for i in range(num+1):
+        total += i
+    total = (total ** 2)
+    return total
+
+def sum_of_squared(num):
+    total = 0
+    for i in range(num+1):
+        total += (i ** 2)
+    return total
+
+if __name__ == "__main__":
+    print(sum_squared(100) - sum_of_squared(100))
